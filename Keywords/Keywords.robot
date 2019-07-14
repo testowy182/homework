@@ -4,6 +4,7 @@ Resource  Variables/Variables.robot
 *** Keywords ***
 OpenPage
     Open browser  ${URL}  ${BROWSER}
+    Maximize Browser Window
 PressSignUp
     Wait Until Element Is Visible  xpath=${SignUp}
     Click Element  xpath=${SignUp}
